@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: default
 title: "vRSLCM API Authentication"
 date: 2020-07-11
 ---
+
 To begin working with vRSLCM to gather details leveraging the api, like the list of environments, we first need to figure out how to authenticate.
 Many VMware KBs advise teh following for creating the <token>:
 <token> : The Base64 encoded value of "username:password". Here username is 'admin@local', and password is admin@local user's password.
