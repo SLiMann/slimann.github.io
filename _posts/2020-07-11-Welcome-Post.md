@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Welcome Post"
 date: 2020-07-11
 ---
