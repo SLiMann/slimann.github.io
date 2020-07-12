@@ -5,7 +5,7 @@ date: 2020-07-11
 ---
 # vRSLCM API Authentication
 
-To begin working with vRSLCM to gather details leveraging the api, like the list of environments, we first need to figure out how to authenticate.
+To begin working with vRealize Suite Lifecycle Manager (vRSLCM) to leverage the api, we first need to to authenticate.
 
 Many VMware KBs advise the following for creating the `<token>` The Base64 encoded value of 'username:password'. In this example we use the default username 'admin@local', and password.
 
@@ -14,8 +14,8 @@ While the words make sense, lets explore how one might Base64 encode the value o
 I tend to leverage sites like base64encode.org to accomplish quick conversion task's.
 
 For example lets encode:
-user name: admin@local
-Password: VMwareRocks
+username: admin@local
+password: VMwareRocks
 
 This would form the string to encode: admin@local:VMwareRocks
 
@@ -27,7 +27,7 @@ Encoding the string results in the following value: YWRtaW5AbG9jYWw6Vk13YXJlUm9j
 Updating the `<token>` we can now discover our environment details with the following curl command:
 
 ~~~
-   root@vrslcm:~$ curl -h "Authorization: Basic <token>" -k https://lcm81.slimann.com/lcm/lcops/api/environments
+   root@vrslcm:~$ curl -h "Authorization: Basic <token>" -k https://lcm81.corp.com/lcm/lcops/api/environments
    
-   root@vrslcm:~$ curl -h "Authorization: Basic YWRtaW5AbG9jYWw6Vk13YXJlUm9ja3M=" -k https://lcm81.slimann.com/lcm/lcops/api/environments
+   root@vrslcm:~$ curl -h "Authorization: Basic YWRtaW5AbG9jYWw6Vk13YXJlUm9ja3M=" -k https://lcm81.corp.com/lcm/lcops/api/environments
 ~~~
