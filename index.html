@@ -2,6 +2,7 @@
 layout: default
 name: SLiMann
 title: Recent Blog Posts
+tag: vrslcm
 ---
 	<h1>{{ page.title }}</h1>
 	<ul class="posts">
@@ -10,5 +11,18 @@ title: Recent Blog Posts
 	  {% endfor %}
 	</ul>
 	<hr>
-	{% include vrslcm.html %}
+	
+<!--	{% include vrslcm.html %} -->
+	<h1>vRealize Suite Lifecycle Manager</h1>
+	<ul class="posts">
+    <!-- {% for post in site.tags[page.tag] %}
+    {% assign tag = "vrslcm"" %} -->
+    {% for post in site.tags[page.tag] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+        {{ post.description }}
+    </li>
+	{% endfor %}
+	</ul>
+	<hr>
+	
 	{% include archive.html %}
