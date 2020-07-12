@@ -17,6 +17,12 @@ Password: VMwareRocks
 This would form the string to encode: admin@local:VMwareRocks
 encoding the string results in the following value: YWRtaW5AbG9jYWw6Vk13YXJlUm9ja3M=
 
-Updating the <token> we can now discover our environment details with the following curl command
-curl -h "Authorization: Basic <token>" -k https://lcm81.slimann.com/lcm/lcops/api/environments
-curl -h "Authorization: Basic YWRtaW5AbG9jYWw6Vk13YXJlUm9ja3M=" -k https://lcm81.slimann.com/lcm/lcops/api/environments
+[![Base64Encode.org the vRSLCM password](/assets/images/vRSLCM-API-Authentication-Base64.png "Base64 Encode vRSLCM Credentials")](https://www.base64encode.org)
+
+
+> Updating the <token> we can now discover our environment details with the following curl command:
+~~~
+{
+    curl -h "Authorization: Basic <token>" -k https://lcm81.slimann.com/lcm/lcops/api/environments
+    curl -h "Authorization: Basic YWRtaW5AbG9jYWw6Vk13YXJlUm9ja3M=" -k https://lcm81.slimann.com/lcm/lcops/api/environments
+}
