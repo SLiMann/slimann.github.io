@@ -5,7 +5,6 @@
   {% endfor %}
 {% endcapture %}
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
-<ul>
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
@@ -14,4 +13,3 @@
     {{ tagname }}
   </li>
 {% endfor %}
-</ul>
