@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "vRSLCM API Authentication"
+description: "Review generating a vRealize Suite Lifecycle Manager <token>"
 date: 2020-07-11
 tags: vrslcm authentication base64
 ---
