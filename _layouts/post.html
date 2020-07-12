@@ -46,18 +46,18 @@
         <span>[
             {% for tag in page.tags %}
               {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+              <!-- <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a> -->
+              <a href="/tag/{{ tagname }}" title="{{ tagname }}">{{ tagname }}</a>
             {% endfor %}
           ]</span>
-
+        <br>
         
         {{ content }}
-        
+
+        <hr>
+
         {% include archive.html %}
         
-
-        <br>
-        <hr>
       </section>
 
     </div>
