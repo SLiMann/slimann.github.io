@@ -42,9 +42,17 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
 
+        <!-- show tags for the post-->
+        <span>[
+            {% for tag in page.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %}
+          ]</span>
+
+        
         {{ content }}
 
-        {% include archive.html %}
       </section>
 
     </div>

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: "vRSLCM API Authentication"
 date: 2020-07-11
+tags: vrslcm authentication base64
 ---
 # vRSLCM API Authentication
 
