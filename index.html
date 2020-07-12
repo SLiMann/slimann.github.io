@@ -15,9 +15,7 @@ title: Recent Blog Posts
 		<!-- <h1>Tag: {{ page.tag }}</h1> -->
 		<h1>vRealize Suite Lifecycle Manager</h1>
 		<ul>
-		---
-		tag: vrslcm
-		---
+		{% assign page.tag = "vrslcm" %}
 		{% for post in site.tags[page.tag] %}
 			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br>
 			{{ post.description }}
