@@ -5,12 +5,22 @@
   {% endfor %}
 {% endcapture %}
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+<ul>
 {% for temptag in sortedtemptags %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   <!-- <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a> -->
   <li><a href="/tag/{{ tagname }}"></a> {{ tagname }}<br>
-    {{ tagname }}
+    Tag title {{ tag.title }} Page title {{ page.title }}
   </li>
 {% endfor %}
+</ul>
 <hr>
+
+<ul>
+  {% for post in site.tags[page.tag] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+      {{ post.description }}
+    </li>
+  {% endfor %}
+  </ul>
