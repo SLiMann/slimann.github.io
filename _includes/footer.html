@@ -11,14 +11,14 @@
   /*height: 300px;  Should be removed. Only for demonstration */
 }
 
-/* Keep the fotter at the bottom */
+/* Keep the fotter at the bottom 
 .footer {
   
   left: 0;
   bottom: 0;
   width: 100%;
 }
-
+*/
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -106,47 +106,45 @@
     margin-right:0;
     font-weight:600
   }
+  .Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 }
 </style>
-
-
-    <footer class="footer">
-        <div class="container">
-          <hr>
-          <div class="row">
-            <div class="column">
-              <h2>About</h2>
-              <p class="text-justify">SLiMann.com Blogging about my interest around GitOps and all things automation. 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                Copyright &copy; 2020 All Rights Reserved by <a href="#">SLiMann</a>.
-              </p>
-            </div>
-            <div class="column">
-                {% include archive.html %}
-            </div>
-            <div class="column">
-              <h2>Quick Links</h2>
-              <ul class="footer-links">
-                <li><a href="/Welcome-Post.html">About Us</a></li>
-                <li><a href="/Contact.html">Contact Us</a></li>
-              </ul>
-            </div>
+<body class="Site">
+  <footer class="footer">
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="column">
+            <h2>About</h2>
+            <p class="text-justify">SLiMann.com Blogging about my interest around GitOps and all things automation.</p>
+          </div>
+          <div class="column">
+              {% include archive.html %}
+          </div>
+          <div class="column">
+            <h2>Quick Links</h2>
+            <ul class="footer-links">
+              <li><a href="/Welcome-Post.html">About Us</a></li>
+              <li><a href="/Contact.html">Contact Us</a></li>
+            </ul>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="column">
-              
-            </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            Copyright &copy; 2020 All Rights Reserved by <a href="#">SLiMann</a>.
+          </div>
 <!--               <ul class="social-icons">
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul> -->
-            </div>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul> -->
           </div>
         </div>
-  </footer>
+      </div>
+    </footer>
+</body>
