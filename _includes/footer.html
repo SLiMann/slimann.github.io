@@ -11,6 +11,14 @@
   /*height: 300px;  Should be removed. Only for demonstration */
 }
 
+/* Keep the fotter at the bottom */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -82,10 +90,6 @@
   width:34px;
   font-size:14px
 }
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
 .social-icons a.twitter:hover
 {
   background-color:#00aced
@@ -93,10 +97,6 @@
 .social-icons a.linkedin:hover
 {
   background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
 }
 @media (max-width:767px)
 {
@@ -110,13 +110,20 @@
 </style>
 
 
-    <footer>
+    <footer class="footer">
         <div class="container">
           <hr>
           <div class="row">
             <div class="column">
               <h2>About</h2>
-              <p class="text-justify">SLiMann.com Blogging about my interest around GitOps and all things automation. </p>
+              <p class="text-justify">SLiMann.com Blogging about my interest around GitOps and all things automation. 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Copyright &copy; 2020 All Rights Reserved by <a href="#">SLiMann</a>.
+              </p>
             </div>
             <div class="column">
                 {% include archive.html %}
@@ -133,7 +140,7 @@
         <div class="container">
           <div class="row">
             <div class="column">
-              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by <a href="#">SLiMann</a>.</p>
+              
             </div>
 <!--               <ul class="social-icons">
                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>

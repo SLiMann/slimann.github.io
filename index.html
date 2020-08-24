@@ -4,6 +4,7 @@ name: SLiMann
 title: Recent Blog Posts
 ---
 	<h1>{{ page.title }}</h1>
+	
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
@@ -11,10 +12,9 @@ title: Recent Blog Posts
 	</ul>
 	<hr>
 	
-	<div class="post">
-		<!-- <h1>Tag: {{ page.tag }}</h1> -->
+	<div>
 		<h1>vRealize Suite Lifecycle Manager</h1>
-		<ul>
+		<ul class="posts">
 			{% for post in site.tags['vrslcm'] %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
 				{{ post.description }}
@@ -22,4 +22,17 @@ title: Recent Blog Posts
 			{% endfor %}
 		</ul>
 		</div>
-		<hr>
+	<hr>
+	<div>
+		<h1>vRealize Automation 8</h1>
+		<ul class="posts">
+			{% for post in site.tags['vra'] %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+				{{ post.description }}
+			</li>
+			{% else %}
+  				No posts yet.	
+			{% endfor %}
+		</ul>
+		</div>
+	<hr>
