@@ -10,3 +10,4 @@ gem 'nokogiri'
 gem 'rack', '~> 2.1.4'
 gem 'rspec'
 gem "github-pages", "~> 206", group: :jekyll_plugins
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
