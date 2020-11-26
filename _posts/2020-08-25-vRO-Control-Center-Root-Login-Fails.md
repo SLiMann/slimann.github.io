@@ -10,7 +10,7 @@ tags: vro control-center authentication
 Attempts to login to vRealize Orchestrator Control Center and VAMI :5480 fail when the root password is aged.
 However, SSH'ing as root continues to work.
 
-By default, the password for the root account of the vRealize Orchestrator Appliance expires after 365 days. 
+By default, the password for the root account of the vRealize Orchestrator Appliance expires after 365 days.
 This can be checked by running ``chage -l root``
 
 You can increase the expiry for the root account by logging into the vRealize Orchestrator Appliance through an SSH client and running ``passwd -x number_of_days name_of_account.`` If you want to increase the vRealize Orchestrator Appliance root password to infinity, run ``passwd -x 99999 root.``
