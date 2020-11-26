@@ -1,3 +1,8 @@
-SliMann.com
-David Rox
-Crushing VS.Code
+---
+layout: readme
+title: "Readme"
+description: "Readme"
+date: 2020-11-26
+---
+
+SliMann.com ... a site for me to blog about my professional work
