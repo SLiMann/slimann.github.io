@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: vRSLCM"
+title: "Tag: vRealize Suite Lifecycle Manager"
 tag: vrslcm
 ---
