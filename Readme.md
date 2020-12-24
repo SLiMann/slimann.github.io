@@ -1,5 +1,5 @@
 ---
-layout: readme
+layout: default
 title: "Readme"
 description: "Readme"
 date: 2020-11-26
