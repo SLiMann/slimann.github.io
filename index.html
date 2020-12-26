@@ -36,3 +36,15 @@ title: Recent Blog Posts
 		</ul>
 		</div>
 	<hr>
+	<div>
+		<h1>vRealize Orchestrator 8</h1>
+		<ul class="posts">
+			{% for post in site.tags['vro'] %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+				{{ post.description }}
+			</li>
+			{% else %}
+  				No posts yet.	
+			{% endfor %}
+		</ul>
+		</div>
