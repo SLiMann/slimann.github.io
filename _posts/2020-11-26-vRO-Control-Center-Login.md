@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Logging in to the vRealize Automation 8.x Embedded Orchestrator Control Center"
-description: "vRealize Automation 8.x Embedded Orchestrator no longer has a page noting the Controll Center URL"
+description: "vRealize Automation 8.x Embedded Orchestrator no longer has a page noting the Control Center URL"
 date: 2020-11-26
 tags: vra vro control-center troubleshooting
 ---
