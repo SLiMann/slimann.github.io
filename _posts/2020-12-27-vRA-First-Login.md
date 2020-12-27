@@ -15,7 +15,7 @@ Congratulations you have successfully completed deploying vRA from vRSLCM, and n
 When browsing to ``https://your_vRA_FQDN`` and clicking Go To Login Page, we are presented with a login prompt from the vIDM Workspace One instance vRA is registered with. Its important to ensure we are logging in to the System Domain, since vRA's Identity and Access Management still needs to be configured with the desired users/groups and roles.
 ![system domain login](/assets/images/vRA-First-Login-System-Domain.png)
 
-Once logged in with the configuration admin account we review the 6 roles assigned to the Configurationadmin user.
+Once logged in with the configuration admin account we can see the 6 roles assigned to the Configurationadmin user.
 
 * Service Broker Administrator
 * Orchestrator Workflow Designer
