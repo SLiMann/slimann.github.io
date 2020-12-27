@@ -29,13 +29,11 @@ Once logged in with the configuration admin account we review the 6 roles assign
 
 ## Logging in to vRA after a successful deployment from vRSLCM when an LDAP source has already been configured in vIDM Workspace One
 
-However if this is not the initial deployment of vRA, chances are you have already configured vIDM Workspace One with a LDAP source for authentication.
+However if this is not the initial deployment of vRA, chances are you have already configured vIDM Workspace One with a LDAP source for authentication. When logging in to the newly deployed vRA instance for the first time, with vIDM already configured to a LDAP source, we need to change the domain back to System Domain.
 
 | ![vIDM AD Domain](/assets/images/vRA-First-Login-AD-Domain.png) | ![vIDM Change Domain](/assets/images/vRA-First-Login-Change-Domain.png)
 |:---:|:---:|
 | vIDM Configuration Admin User | vRA Login with Configuration Admin User |
-
-When logging in to the newly deployed vRA instance for the first time, with vIDM already configured to a LDAP source, we need to change the domain back to System Domain.
 
 Once Workspace One ui notes System Domain, login with the configuration administrator credentials showing in the globalenvironment under the vIDM product in vRSLCM.
 
