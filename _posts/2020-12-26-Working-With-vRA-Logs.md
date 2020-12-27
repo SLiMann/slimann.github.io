@@ -2,7 +2,7 @@
 layout: post
 title: "Working with vRA Logs"
 description: "Helpful commands for working with vRA logs"
-date: 2020-07-11
+date: 2020-12-26
 tags: vra troubleshooting
 ---
 
@@ -30,7 +30,7 @@ We can leverage ``find /services-logs/prelude/ -name "*.log" | xargs tail -f``
 
 > vRA 8.x
 >
-> *  How do I work with logs and log bundles in vRealize Automation - [https://docs.vmware.com/en/vRealize-Automation/8.0/Administering/GUID-EB314825-845A-4F31-8155-53F99F0B7B3C.html](https://docs.vmware.com/en/vRealize-Automation/8.0/Administering/GUID-EB314825-845A-4F31-8155-53F99F0B7B3C.html)
+> * How do I work with logs and log bundles in vRealize Automation - [https://docs.vmware.com/en/vRealize-Automation/8.0/Administering/GUID-EB314825-845A-4F31-8155-53F99F0B7B3C.html](https://docs.vmware.com/en/vRealize-Automation/8.0/Administering/GUID-EB314825-845A-4F31-8155-53F99F0B7B3C.html)
 
 ---
 
