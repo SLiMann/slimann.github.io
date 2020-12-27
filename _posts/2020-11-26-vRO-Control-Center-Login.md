@@ -8,7 +8,7 @@ tags: vra vro control-center troubleshooting
 
 ## Logging in to the vRealize Automation 8.x Embedded Orchestrator Control Center
 
-Beginning with the 8.x branch of vRealize Orchestrator and Automation, the virtual machine interface VAMI running on port 5480 has been depreciated. Along with the VAMI being depricated, the tab for controling the Orchestrator server and control center are no longer available.
+Beginning with the 8.x branch of vRealize Orchestrator and Automation, the virtual machine interface VAMI running on port 5480 has been depreciated. Along with the VAMI being deprecated, the tab for controlling the Orchestrator server and control center are no longer available.
 
 | ![vRA](/assets/images/vRO-Control-Center-Login-vRA-Console-Login.png) | ![vRO](/assets/images/vRO-Control-Center-Login-Console-Login.png)
 |:---:|:---:|
@@ -20,7 +20,7 @@ Fortunately, the Control Center URL is noted in the following documentation
 
 > vRA 8.x with embedded vRealize Orchestrator instance
 >
-> You can access the Control Center of the embedded vRealize Orchestrator by navigating to https://your_vRA_FQDN/vco-controlcenter and logging in as root.
+> You can access the Control Center of the embedded vRealize Orchestrator by navigating to ``https://your_vRA_FQDN/vco-controlcenter`` and logging in as root.
 >
 > * Using the Embedded vRealize Orchestrator Client - [https://docs.vmware.com/en/vRealize-Automation/8.0/vmware-vrealize-orchestrator-embedded/GUID-F1AF994C-FCE8-4E40-81F1-285E469CC95F.html](https://docs.vmware.com/en/vRealize-Automation/8.0/vmware-vrealize-orchestrator-embedded/GUID-F1AF994C-FCE8-4E40-81F1-285E469CC95F.html)
 
