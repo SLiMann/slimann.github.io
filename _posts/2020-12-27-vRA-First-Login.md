@@ -3,7 +3,7 @@ layout: post
 title: "Logging in to vRA for the first time"
 description: "Helpful hints to logging into vRA after the initial deployment"
 date: 2020-12-27
-tags: vra troubleshooting
+tags: vra vidm iam troubleshooting
 ---
 
 ## Logging in to vRA after a successful deployment from vRSLCM
