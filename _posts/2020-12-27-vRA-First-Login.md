@@ -44,3 +44,13 @@ Once Workspace One ui notes System Domain, login with the configuration administ
 Now that we have completed logging in to vRA, my first step is to browse to Identity and Access Management and integrate my domain groups from vIDM. When reaching IAM we can see our configuration admin user is entitled with the 6 roles needed to make it an administrator, however none of our users from vIDM Workspace One have been assigned Organization or Service Roles.
 
 ![vRA IAM](/assets/images/vRA-First-Login-vRA-IAM-vIDM.png)
+
+## Errors
+
+If we attempt to login with a domain account, prior to granting the user a role in IAM, we are presented with a 403 error. Simply click Sign Out, and log back in with the configuration admin user, noted in vRSLCM, ensuring the System Domain is selected.
+
+>
+403 Error
+It appears that you don't have access to VMware vRealize Automation.
+
+![vRA 403 Error](/assets/images/vRA-First-Login-vRA-403-Error.png)
