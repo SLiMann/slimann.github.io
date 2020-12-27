@@ -33,7 +33,7 @@ However if this is not the initial deployment of vRA, chances are you have alrea
 
 | ![vIDM AD Domain](/assets/images/vRA-First-Login-AD-Domain.png) | ![vIDM Change Domain](/assets/images/vRA-First-Login-Change-Domain.png)
 |:---:|:---:|
-| vIDM Configuration Admin User | vRA Login with Configuration Admin User |
+| Change to a different domain | Select System domain for the Configuration Admin User |
 
 Once Workspace One ui notes System Domain, login with the configuration administrator credentials showing in the globalenvironment under the vIDM product in vRSLCM.
 
