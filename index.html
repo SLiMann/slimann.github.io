@@ -48,15 +48,16 @@ title: Recent Blog Posts
 			{% endfor %}
 		</ul>
 		</div>
-		<div>
-			<h1>NSX-T</h1>
-			<ul class="posts">
-				{% for post in site.tags['nsx-t'] %}
-				<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-					{{ post.description }}
-				</li>
-				{% else %}
-					  No posts yet.	
-				{% endfor %}
-			</ul>
-			</div>		
+	<hr>
+	<div>
+		<h1>NSX-T</h1>
+		<ul class="posts">
+			{% for post in site.tags['nsx-t'] %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+				{{ post.description }}
+			</li>
+			{% else %}
+					No posts yet.	
+			{% endfor %}
+		</ul>
+		</div>		
